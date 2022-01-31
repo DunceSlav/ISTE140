@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Cryptocurrency: Bitcoin</title>
+		<meta charset="utf-8" />
+        <link rel="stylesheet" href="assets/css/style.css">
+
+    </head>
+	<body>
+        <button onclick="to_top_Function()" id="button" title="Go to top">Back to top</button>
+        <script>
+            var up_button = document.getElementById("button");
+
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                up_button.style.display = "block";
+              } else {
+                up_button.style.display = "none";
+              }
+            }
+
+            function to_top_Function() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <div id="title">
+            <h1>Cryptocurrency: Bitcoin</h1>
+        </div>
+        
+        <div class="jump_to">
+            <div><p><a href=#intro>Intro</a></p></div>
+            <div><p><a href="#what_is_it">What is Bitcoin?</a></p></div>
+            <div><p><a href="#how_to_get">How do you get Bitcoin?</a></p></div>
+            <div><p><a href="#how_to_buy">How to buy Bitcoin</a></p></div>
+            <div><p><a href="#how_to_mine">How to mine Bitcoin</a></p></div>
+            <div><p><a href="#longer_explination">Video Explination</a></p></div>
+            <div><p><a href="#sources">Sources</a></p></div>
+        </div>
+
+        <div class="block" id="intro">
+            <h2>What is Cryptocurrency?</h2>
+            <div class="row">
+                <div class="pannel">
+                    <img class="image_small" src="assets/media/no_bank.png" alt="no bank" width= "500" height= "500">
+                    <p>Decentralized currency</p>
+                </div>
+                <div class="pannel">
+                    <img class="image_small" src="assets/media/digital.png" alt="digital" width= "835" height= "823">
+                    <p>Digital</p>
+                </div>
+                <div class="pannel">
+                    <img class="image_small" src="assets/media/anyone.png" alt="anyone" width= "590" height= "500">
+                    <p>Not owned by any one person</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="block" id="what_is_it">
+            <h2>What is Bitcoin?</h2>
+            <p>Bitcoin was the first decentralized digital currency.</p>
+            <img class="image" src="assets/media/bitcoin_logo.png" alt="bitcoin logo" width= "614" height= "128">
+        </div>
+
+        <div class="block" id="how_to_get">
+            <h2>How do you get Bitcoin?</h2>
+            <p>There are two ways of getting bitcoin: buying and mining. However, before you buy or mine any bitcoin, you need to 
+                get a cryptocurrency wallet. You can set up a wallet at <a href="https://www.coinbase.com/">coinbase.com</a></p>
+        </div>
+
+        <div class="block" id="how_to_buy">
+            <h2>How to buy Bitcoin</h2>
+            <p>You can buy Bitcoin from many different places. One place you can buy Bitcoin and almost any other form of
+                cryptocurrency without any fee is <a href="https://robinhood.com/us/en/about/crypto/">robinhood.com</a>. 
+                Another place you can buy Bitcoin is the same place you made your cryptocurrency wallet: 
+                <a href="https://www.coinbase.com/">coinbase.com</a>.
+            </p>
+            <img class="image_small" src="assets/media/exchange.png" alt="exchange" width= "1000" height= "1000">
+        </div>
+
+        <div class="block" id="how_to_mine">
+            <h2>How to mine Bitcoin</h2>
+            <p>Mining is the term used to describe the process that verifies cryptocurrency transactions. At the end of every
+                verification there is a small reward for doing the work. This verification can be done by anybody that has 
+                asccess to a computer. There are two ways to mine any cryptocurrency like Bitcoin: with the computer's GPU or
+                an ASIC machine. The ASIC machine is a machine that was designed specifically to mine cryptocurrency and is a
+                lot more effective at mining than a GPU, however, they are much more expensive. An easy application to use and
+                set up to start mining is <a href="https://www.nicehash.com/">nicehash.com</a>.
+            </p>
+            <img class="image" src="assets/media/nicehash.png" alt="nicehash" width= "1058" height= "275">
+        </div>
+
+        <div class="block" id="longer_explination">
+            <h2>A longer explination of how Bitcoin works</h2>
+            <iframe class="image" width="560" height="315" src="https://www.youtube.com/embed/bBC-nXj3Ng4" title="YouTube video player" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="block" id="sources">
+            <h2>Sources</h2>
+            <p>Buy &amp; sell Bitcoin, Ethereum, and more with trust. Coinbase. (n.d.). <a href="https://www.coinbase.com/">https://www.coinbase.com/</a>.</p>
+            <p>File:Bitcoin logo.svg. Wikimedia Commons. (n.d.). <a href="https://commons.wikimedia.org/wiki/File:Bitcoin_logo.svg.">https://commons.wikimedia.org/wiki/File:Bitcoin_logo.svg.</a></p> 
+            <p>Leading cryptocurrency platform for mining and trading. NiceHash. (n.d.). <a href="https://www.nicehash.com/">https://www.nicehash.com/</a>.</p>
+            <p>Open source p2p money. Bitcoin. (n.d.). <a href="https://bitcoin.org/en/">https://bitcoin.org/en/</a>.</p> 
+            <p>Robinhood crypto. Robinhood. (n.d.). <a href="https://robinhood.com/us/en/about/crypto/">https://robinhood.com/us/en/about/crypto/</a>.</p> 
+            <p>YouTube. (2017). YouTube. <a href="https://www.youtube.com/watch?v=bBC-nXj3Ng4">https://www.youtube.com/watch?v=bBC-nXj3Ng4</a>.</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,119 @@
+body{
+    background-color:black;
+    color: green;
+    font-family:monospace;
+    text-align: center;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+h1{
+    font-size: 80px;
+    margin-bottom: -1em;
+}
+
+h2{
+    font-size: 60px;
+}
+
+h3{
+    font-size: 40px;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 1em;
+}
+
+.image{
+    height: 90%;
+    width: 90%;
+}
+.image_small{
+    height: 45%;
+    width: 45%;
+}
+
+.jump_to{
+    display:grid;
+    background:black;
+    justify-content:space-evenly;
+    align-items:center;
+  }
+
+a{
+    color:blue; 
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color:red; 
+    font-weight: bold; 
+    text-decoration:underline;
+}
+
+a:visited {
+    color: purple; 
+    text-decoration: none;
+}
+
+#title, #intro, #what_is_it, #how_to_get, #how_to_buy, #how_to_mine, #longer_explination{
+    padding-bottom: 5em;
+}
+
+.block{
+    opacity: 25%;
+    transition: opacity 1.5s;
+}
+
+.block:hover{
+    opacity: 100%;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pannel{
+    margin: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    width: 100px;
+}
+
+#button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#button:hover {
+    background-color: white;
+}
+
+@media only screen and (max-width:768px){
+    h1{
+        font-size: 50px;
+        margin-bottom: -1em;
+    }
+    
+    h2{
+        font-size: 50px;
+    }
+}
